@@ -2,11 +2,12 @@ import Cart from 'components/cart';
 import OpenCart from 'components/cart/open-cart';
 import LogoSquare from 'components/logo-square';
 import { getMenu } from 'lib/shopify';
-import { Menu } from 'lib/shopify/types';
+//import { Menu } from 'lib/shopify/types';
 import Link from 'next/link';
 import { Suspense } from 'react';
 import MobileMenu from './mobile-menu';
 import Search from './search';
+import TopNav from './topnav';
 const { SITE_NAME } = process.env;
 
 export default async function Navbar() {
@@ -25,7 +26,7 @@ export default async function Navbar() {
               {SITE_NAME}
             </div>
           </Link>
-          {menu.length ? (
+          {/*{menu.length ? (
             <ul className="hidden gap-6 text-sm md:flex md:items-center">
               {menu.map((item: Menu) => (
                 <li key={item.title}>
@@ -38,9 +39,12 @@ export default async function Navbar() {
                 </li>
               ))}
             </ul>
-          ) : null}
+              ) : null}*/}
+         <div>
+              <TopNav />
+          </div>
         </div>
-        <div className="hidden justify-center md:flex md:w-1/3">
+        <div className="hidden justify-end md:flex md:w-1/3">
           <Search />
         </div>
         <div className="flex justify-end md:w-1/3">
