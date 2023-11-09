@@ -39,6 +39,6 @@ const navlinks = [
     })
 
     return (
-      <ul className="mt-2 hidden gap-6 text-sm md:flex md:items-center">{navList}</ul>
+      <ul className="mt-2 hidden gap-2 text-sm md:flex md:items-center">{navList}</ul>
     )
   }

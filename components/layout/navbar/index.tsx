@@ -40,11 +40,11 @@ export default async function Navbar() {
               ))}
             </ul>
               ) : null}*/}
-         <div>
+         <div className='md:hidden 2xl:flex'>
               <TopNav />
           </div>
         </div>
-        <div className="hidden justify-end md:flex md:w-1/3">
+        <div className="hidden justify-end md:flex md:w-1/4">
           <Search />
         </div>
         <div className="flex justify-end md:w-1/3">
