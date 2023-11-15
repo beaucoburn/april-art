@@ -1,15 +1,17 @@
 'use client';
 
 import { Dialog, Transition } from '@headlessui/react';
-import Link from 'next/link';
+//import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { Fragment, useEffect, useState } from 'react';
 
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { Menu } from 'lib/shopify/types';
+//import { Menu } from 'lib/shopify/types';
 import Search from './search';
 
-export default function MobileMenu({ menu }: { menu: Menu[] }) {
+import TopNav from './topnav';
+
+export default function MobileMenu({/*{ menu }: { menu: Menu[] }*/}) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [isOpen, setIsOpen] = useState(false);
@@ -74,7 +76,7 @@ export default function MobileMenu({ menu }: { menu: Menu[] }) {
                 <div className="mb-4 w-full">
                   <Search />
                 </div>
-                {menu.length ? (
+                {/*{menu.length ? (
                   <ul className="flex w-full flex-col">
                     {menu.map((item: Menu) => (
                       <li
@@ -87,7 +89,10 @@ export default function MobileMenu({ menu }: { menu: Menu[] }) {
                       </li>
                     ))}
                   </ul>
-                ) : null}
+                    ) : null}*/}
+                    <div>
+                      <TopNav />
+                    </div>
               </div>
             </Dialog.Panel>
           </Transition.Child>
