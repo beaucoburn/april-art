@@ -11,22 +11,22 @@ const footlinks = [
   },
   {
     text: "Prints",
-    url: "/prints",
+    url: "/search/prints",
     key: "prints",
   },
   {
     text: "Stickers",
-    url: "/stickers",
+    url: "/search/stickers",
     key: "stickers",
   },
   {
     text: "Pins",
-    url: "/pins",
+    url: "/search/pins",
     key: "pins",
   },
   {
     text: "Coloring Pages",
-    url: "/coloring-pages",
+    url: "/search/coloring-pages",
     key: "pages",
   }
 ];
