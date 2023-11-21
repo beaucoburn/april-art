@@ -1,17 +1,17 @@
 import Cart from 'components/cart';
 import OpenCart from 'components/cart/open-cart';
 import LogoSquare from 'components/logo-square';
-//import { getMenu } from 'lib/shopify';
-//import { Menu } from 'lib/shopify/types';
+import { getMenu } from 'lib/shopify';
+import { Menu } from 'lib/shopify/types';
 import Link from 'next/link';
 import { Suspense } from 'react';
 import MobileMenu from './mobile-menu';
 import Search from './search';
-import TopNav from './topnav';
+//import TopNav from './topnav';
 const { SITE_NAME } = process.env;
 
 export default async function Navbar() {
-  //const menu = await getMenu('next-js-frontend-header-menu');
+  const menu = await getMenu('next-js-frontend-header-menu');
 
   return (
     <nav className="relative flex items-center justify-between p-4 lg:px-6">
@@ -26,7 +26,7 @@ export default async function Navbar() {
               {SITE_NAME}
             </div>
           </Link>
-          {/*{menu.length ? (
+          {menu.length ? (
             <ul className="hidden gap-6 text-sm md:flex md:items-center">
               {menu.map((item: Menu) => (
                 <li key={item.title}>
@@ -39,10 +39,10 @@ export default async function Navbar() {
                 </li>
               ))}
             </ul>
-              ) : null}*/}
-         <div className='md:hidden 2xl:flex'>
+              ) : null}
+         {/*<div className='md:hidden 2xl:flex'>
               <TopNav />
-          </div>
+            </div>*/}
         </div>
         <div className="hidden justify-end md:flex md:w-1/4">
           <Search />
