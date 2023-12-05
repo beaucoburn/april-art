@@ -21,7 +21,7 @@ const navlinks = [
     },
     {
       text: "Products",
-      url: "/search",
+      url: "/search/all",
       key: "products",
     }
   ];
