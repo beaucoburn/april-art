@@ -2,7 +2,7 @@
 
 # NextJS ECommerce Site for Artist
 
-A Next.js 13 and App Router-ready ecommerce template featuring:
+A Next.js 13 ecommerce app featuring:
 
 - Next.js App Router
 - Optimized for SEO using Next.js's Metadata
