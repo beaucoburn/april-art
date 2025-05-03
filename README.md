@@ -1,4 +1,5 @@
-![Screenshot of April Elizabeth Website]([./Screenshot from 2023-11-21 17-04-18.png](https://github.com/beaucoburn/april-art/blob/main/Screenshot%20from%202023-11-21%2017-04-18.png))
+![Screenshot from 2023-11-21 17-04-18](https://github.com/user-attachments/assets/ebff41ec-09ef-49a3-9eca-4fba4bb03ddb)
+
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fcommerce&project-name=commerce&repo-name=commerce&demo-title=Next.js%20Commerce&demo-url=https%3A%2F%2Fdemo.vercel.store&demo-image=https%3A%2F%2Fbigcommerce-demo-asset-ksvtgfvnd.vercel.app%2Fbigcommerce.png&env=COMPANY_NAME,SHOPIFY_REVALIDATION_SECRET,SHOPIFY_STORE_DOMAIN,SHOPIFY_STOREFRONT_ACCESS_TOKEN,SITE_NAME,TWITTER_CREATOR,TWITTER_SITE)
 
